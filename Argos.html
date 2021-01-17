@@ -1,0 +1,213 @@
+<script language=JavaScript> 
+
+var message="Right click disabled."; 
+function clickIE4(){ if (event.button==2){ alert(message); return false; } } function clickNS4(e){ if (document.layers||document.getElementById&&!document.all){ if (e.which==2||e.which==3){ alert(message); return false; } } } if (document.layers){ document.captureEvents(Event.MOUSEDOWN); document.onmousedown=clickNS4; } else if (document.all&&!document.getElementById){ document.onmousedown=clickIE4; } document.oncontextmenu=new Function("alert(message);return false") 
+</script>
+<script src="https://www.youtube.com/player_api"></script>
+<script>function toggleButtonPlayer_Player(buttonobj){buttonobj.style.display="none";if(buttonobj.id=="SurrenderCode-Player-playbutton"){document.getElementById("SurrenderCode-Player-pausebutton").style.display="inline";}else{document.getElementById("SurrenderCode-Player-playbutton").style.display="inline";}}</script>
+
+
+<style>
+#left_container,.topad,.profile_text{display: none;}
+.logo_div {visibility: hidden;} 
+.fpix_header {visibility: hidden;} 
+.topad {visibility: hidden;} 
+.fpix_asl_table { visibility: hidden;} 
+.profile_text {visibility: visible;} 
+.nc_profile {visibility: visible;} 
+#left_container {visibility: hidden; } 
+#flash_close_butt {visibility: hidden;} 
+#start_chat_but {visibility: hidden;} 
+#fpix_wrapper {visibility: visible;} 
+span {display:none !important;] 
+</style>
+
+<style> 
+::-webkit-scrollbar {background-color: transparent; height:4px; width:8px; border:1px solid #FF0000}
+
+::-webkit-scrollbar-thumb:vertical {background-color:#773333; border:1px solid #555555; height:50px}
+
+::-webkit-scrollbar-thumb:horizontal {background-color:#000077; border:1px solid #00ff00; height:8px}
+
+
+body {
+overflow:hidden;
+background-image: url('http://i.imgur.com/j4Ewtjp.png') !important; 
+-webkit-background-size: cover; /* For WebKit*/
+-moz-background-size: cover;    /* Mozilla*/
+-o-background-size: cover;      /* Opera*/
+background-size: cover;         /* Generic*/
+}
+</style>
+
+<style>
+
+body, a:hover {
+cursor:url('http://cur.cursors-4u.net/cursors/cur-9/cur858.png'), progress !important;
+}
+
+div.transbox{
+position: fixed;
+left: 10%; top: 5%;
+border:1px solid #FF0000;
+height: 8%;
+width: 80%;
+color: #ffffff;
+background-color: rgba(0, 0, 0, 0.9);
+font-family:arial;
+line-height:5%;
+font-size:100%;
+opacity:0.90;
+}
+
+#tupp{
+position: fixed;
+left: 0%; right: 0%;
+bottom: 0%; top: 0%;
+margin: auto;
+width: 100%;
+height: 100%;
+background-color: transparent;
+} 
+
+ 
+#contentTwo{
+margin: auto;
+border:1px solid #FF0000;
+background-image: url('http://i.imgur.com/Z10wdDb.png');
+background-repeat:no-repeat;
+background-size:100%;
+padding:23px;
+color: #FF5555;
+font-family:arial;
+line-height:15px;
+font-size:12px;
+overflow: auto;
+opacity:0.90;
+}
+
+#contentTwo{position:fixed; left: 10%; top: 20%; height: 75%; width: 80%;}
+}
+
+.playerbutton{
+border: none;
+background:transparent;
+outline:none;
+display:inline
+}
+
+.SurrenderCode_youtubebox,.preload_box{
+width:0px;
+height:0px;
+overflow:hidden;
+position:fixed;
+display:inline
+}
+
+.SurrenderCode_youtubetitle{
+font-family: Times;
+font-size:14px;
+display:inline-block;
+vertical-align:top;
+padding-bottom:0px;
+}
+
+#SurrenderCode_Player_container{
+text-shadow:1px 1px #FF0000;
+}
+
+
+.open {
+opacity:0;
+-webkit-animation:open ease-in 1;
+-moz-animation:open ease-in 1;
+animation:open ease-in 1;  
+-webkit-animation-fill-mode:forwards;
+-moz-animation-fill-mode:forwards;
+animation-fill-mode:forwards;  
+-webkit-animation-duration:0.9s;
+-moz-animation-duration:0.9s;
+animation-duration:0.9s;
+}
+
+@-webkit-keyframes open { from { opacity:0; } to { opacity:1; } }
+
+@-moz-keyframes open { from { opacity:0; } to { opacity:1; } }
+
+@keyframes open { from { opacity:0; } to { opacity:1; } }
+ 
+
+ 
+.text{
+font-size: 100%;
+font-family: trebuchet ms;
+text-align: justify;
+color: #ffffff;
+margin: 12px;
+}
+
+b{
+color: #990000;
+font-family:consolas;
+text-transform:uppercase;
+letter-spacing: 1px;
+font-size: 100%;
+}
+ 
+i{
+color: #FFFFFF;
+font-size: 9px;
+}
+
+
+</style>
+
+<link rel="shortcut icon" href="http://eclecticquill.com/assets/favicon-transparent.ico">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+<script language=javascript>document.title=(" Argos Rex ")</script> 
+
+
+<div style="position:fixed;top: 0%;left: 0%; z-index:1;"><div id="SurrenderCode_Player_container"><div class="SurrenderCode_youtubebox"><iframe allow="autoplay" width="3000px" height="300px" src="https://www.youtube.com/embed/YZ4ymjT2eFY?enablejsapi=1&amp;fs=0&amp;rel=0&amp;showinfo=0&amp;modestbranding=1&amp;iv_load_policy=3&amp;controls=0&amp;autoplay=0&amp;loop=0" onload="SurrenderCode_Player=new YT.Player(this,{events:{'onStateChange':function(event){if(event.data == 1){document.getElementById('SurrenderCode_Player_title').innerHTML=event.target.getVideoData().title;toggleButtonPlayer_Player(document.getElementById('SurrenderCode-Player-playbutton'))}}}})"></iframe></div>
+<button type="button" class="playerbutton" id="SurrenderCode-Player-playbutton" onclick="SurrenderCode_Player.playVideo();toggleButtonPlayer_Player(this)"><img src="https://imgur.com/NUFUI7F.png"></button><button type="button" class="playerbutton" id="SurrenderCode-Player-pausebutton" onclick="SurrenderCode_Player.pauseVideo();toggleButtonPlayer_Player(this)" style="display:none"><img src="https://imgur.com/PFviyKg.png"></button><div class="preload_box"><img src="https://imgur.com/NUFUI7F.png"><img src="https://imgur.com/PFviyKg.png"></div><input style="outline:none" type="range" min="0" max="100" onchange="SurrenderCode_Player.setVolume(this.value)"><div id="SurrenderCode_Player_title" class="SurrenderCode_youtubetitle"></div></div></div>
+
+  <div class="transbox">
+<i><p align="center"> A fight? Are you serious? I am Argos 'Demon' Rex, there is none stronger than I!</i></p></div>
+<div id="contentTwo">
+<i><p align="center">Cower in fear, whelp. I am Argos Rex, and you? You are merely dog food.</i></p>
+<p align="left">
+<br>
+<b>Name:</b> Argos Rex<br>
+<b>Race:</b> Canis Lupus<br>
+<b>Alignment:</b> Neutral Evil<br>
+<p align="center"><b>Features </b><br></p>
+Argos' main features is his shiny, obsidian dark fur, only broken where the tribal red fur reside. The red bits of fur appear only at his shoulders, just below his eyes, and at the tips of his ears and tail. Grey fur covers his abdomen as well as part of his face. He has an unusual pair of eyes, being heterochromic with the left being green and the right blue.
+<br><br>
+<p align="center"><b>Personality</b><br></p>
+Argos is often called apathetic, careless, and cruel, and they'd be right for the most part. Having grown up in one of the harshest cities, he had to learn to do whatever was needed to get ahead, including becoming a ruthless, cold person.
+<br><br>
+<p align="center"><b>Background</b><br></p>
+Born within the slums of the ghetto and abandoned by his parents at age of 5, he was left to struggle to survive or die. Gang affilitation was inevitable for most, as the city was separated in half by the strife of the two main gangs.
+<br>
+He was lucky enough to avoid the two, despite the constant harassing and recruiting attempts of the main gangs, both wanting him as a member as he was quite the powerhouse. His extracurricular activity during school is what saved him most of the time. It was during this time that he grew his love for fighting. He took Ju Jitsu, Tae Kwon Doe, and boxing as his first classes, and he excelled in them. He later took up Combat Sambo and Krav Maga. 
+<br>
+At 16 he began fighting in underground rings, though he was merely a newcomer, he packed intense power behind his punches. After actually fighting several people, he began to hone his ability and defense, allowing him to endure blows far better than most. Eventually he ended up mixing all of his known combat styles along with his extremely high durability and strength to design his own style of Mixed Martial Arts. His style focused  primarily on defense and a reliable finishing blow. Of all known fighters, he was the one most known for his ability to win by KO.
+<br>
+He soon caught the eye of an organizer for city's main underground ring and was brought in. He continued to fight for several more years, brutally beating his opponents to the point of hospitalizing them. This harsh treatment earned him the nickname 'The Demon'.
+<br>
+Eventually, this came to a stop and he began to refocus his life towards something less chaotic and illegal. He was hired as a bouncer within a popular club. Due to the popularity of the club it wasn't unreasonable for there to be a few fights, disputes, etc throughout the day. Normally per shift there used to be 3 or 4 bouncers, but with his hire he would often be left alone or with just 1 other bouncer given how well he handled things. His intimidating size as well as hard-earned reputation ensured people really didn't try anything with such an imposing figure upon them. Despite how clean he went, he still has his vices. Given how well he does his job, it's no surprise why management looks the other way when he takes a drink or two while on duty.
+<br>
+<p align="center"><b>Abilities</b><br></p>
+<b>Strength:</b> Strength is an area where Argos highly excels at, able to carry over 500 pounds in bench pressing.<br>
+<b>Durability:</b> Argos possesses an unusual amount of durability, able to tank several blows and even knife wounds, though this has its limits like anything else.<br>
+<b>Reflexes:</b> Constant refinement of his fighting carrier has left him with an inhumane reflex, able to react in less than a tenth of a second.<br>
+<b>Speed:</b> Argos may possess strength and durability, but he sorely lacks in speed. He is constantly outran by many of his opponents, and can have others run circles around him. The only offset to this is that those with high speed, often times do not have the strength to take him down and are exhausted way before him.<br>
+<b>Stamina:</b> He has an unholy amount of Stamina, able to run a couple of hours without rest, being outlasted is an unlikely scenario.<br>
+<b>Weapon Mastery:</b> Basic; he has only the average knowledge of how to use weapons, though he prefers not to use them as he prefers brawling.<br>
+<b>Strategy:</b> More known for sheer brute than brawn, he's not a great strategic mastermind, thus often does not come up with strategies. Don't misunderstand this. Although he doesn't do tactics, he is a natural genius when it comes to fighting, knowing when to conserve energy and defend and when to unleash his fury.<br>
+<b>Magic:</b> Argos isn't the best at magic. Although he has a large pool of energy stored, he is unable to change it's nature and unleash elemental attacks. Despite this, he developed a rather unique workaround to this however. He stores magic around his body, creating a natural barrier. He can also use this offensively, gathering energy into one spot and releasing it in an instant, vastly amplifying the strength of his punches.<br><br>
+</div>
+<div style="position:fixed;top: 0%;right: 0%; z-index:1;">
+<script src="//barrykun.com/vl.js" private="true" comments="false" voting="false" bgcolor="#000000" bordercolor="#00" textcolor="#ff0000"></script>
+</div>
+</script>
